@@ -14,6 +14,7 @@
 		ACCF1B6A1F96016100C6B6AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF1B681F96016100C6B6AB /* LaunchScreen.storyboard */; };
 		ACCF1B751F96016100C6B6AB /* CDViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF1B741F96016100C6B6AB /* CDViewerTests.swift */; };
 		ACCF1B801F96016100C6B6AB /* CDViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF1B7F1F96016100C6B6AB /* CDViewerUITests.swift */; };
+		ACCF1B8E1F9601A800C6B6AB /* CD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF1B8D1F9601A800C6B6AB /* CD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		ACCF1B5C1F96016000C6B6AB /* CDViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCF1B5F1F96016100C6B6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACCF1B611F96016100C6B6AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACCF1B611F96016100C6B6AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		ACCF1B641F96016100C6B6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACCF1B661F96016100C6B6AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCF1B691F96016100C6B6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		ACCF1B7B1F96016100C6B6AB /* CDViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCF1B7F1F96016100C6B6AB /* CDViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDViewerUITests.swift; sourceTree = "<group>"; };
 		ACCF1B811F96016100C6B6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCF1B8D1F9601A800C6B6AB /* CD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				ACCF1B661F96016100C6B6AB /* Assets.xcassets */,
 				ACCF1B681F96016100C6B6AB /* LaunchScreen.storyboard */,
 				ACCF1B6B1F96016100C6B6AB /* Info.plist */,
+				ACCF1B8D1F9601A800C6B6AB /* CD.swift */,
 			);
 			path = CDViewer;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				ACCF1B621F96016100C6B6AB /* ViewController.swift in Sources */,
 				ACCF1B601F96016100C6B6AB /* AppDelegate.swift in Sources */,
+				ACCF1B8E1F9601A800C6B6AB /* CD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
