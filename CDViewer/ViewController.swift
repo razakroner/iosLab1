@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var maxIndex: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getData()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBOutlet weak var artistField: UITextField!
     @IBOutlet weak var albumField: UITextField!
@@ -66,6 +68,34 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func new(_ sender: Any) {
+        
+    }
+    
+    @IBAction func save(_ sender: Any) {
+        var cd = (data[actualIndex] as! [String: Any])
+        cd["artist"] = artistField.text
+        data[actualIndex]=cd
+    }
+    
+    
+    @IBAction func prev(_ sender: Any) {
+        self.actualIndex-=1
+        self.updateTextFields()
+        self.currentTrackUpdate()
+    }
+    
+    @IBAction func next(_ sender: Any) {
+        self.actualIndex+=1
+        self.updateTextFields()
+        self.currentTrackUpdate()
+    }
+    
+    @IBAction func SecondViewAction(_ sender: Any) {
+    }
+    
+    
+    @IBOutlet weak var secondView: UIButton!
     func getData(){
         let urlString = URL(string: "https://isebi.net/albums.php")
         if let url = urlString {
@@ -84,3 +114,6 @@ class ViewController: UIViewController {
             task.resume()
         }
     }}
+
+
+
